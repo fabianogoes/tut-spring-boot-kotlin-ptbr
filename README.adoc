@@ -90,7 +90,7 @@ plugins {
 === Opções do compilador
 
 Uma das principais características de Kotlin é https://kotlinlang.org/docs/null-safety.html[null-safety] - 
-Que lida de forma limpa com o valores `null` em tempo de compilação em vez de esbarrar no famoso `null` `NullPointerException` em tempo de execução. 
+Que lida de forma limpa com os valores `null` em tempo de compilação em vez de esbarrar no famoso `null` `NullPointerException` em tempo de execução. 
 Isso torna as aplicações mais seguras por meio de declarações nullability e expressando "value or no value" semântica sem pagar o custo de usar `Optional`. 
 Observe que Kotlin permite o uso de construções funcionais com valores anuláveis; veja https://www.baeldung.com/kotlin/null-safety[comprehensive guide to Kotlin null-safety].
 
