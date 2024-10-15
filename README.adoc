@@ -535,7 +535,7 @@ class User(
 Repare que estamos a utilizar aqui o nossa extension `String.toSlug()` para fornecer um argumento padrão ao parametro `slug` do constructor `Article`. 
 Os parâmetros opcionais com valores padrão são definidos na última posição para permitir a sua omissão quando se utilizam argumentos posicionais (Kotlin também suporta https://kotlinlang.org/docs/reference/functions.html#named-arguments[named arguments]). Observe que, em Kotlin, não é incomum agrupar declarações de classes concisas no mesmo arquivo.
 
-Observe: Aqui não estamos uando https://kotlinlang.org/docs/data-classes.html[`data` classes] com propriedades `val` porque JPA não foi projetado para funcionar com classes imutáveis ou com os métodos gerados automaticamente pelo `data`. Se você estiver usando outra variante do Spring Data, a maioria deles foi projetada para suportar tais construções, portanto, você deve usar classes como `data class User(val login: String, ...)` Quando estiver usando Spring Data MongoDB, Spring Data JDBC, etc.
+Observe: Aqui não estamos usando https://kotlinlang.org/docs/data-classes.html[`data` classes] com propriedades `val` porque JPA não foi projetado para funcionar com classes imutáveis ou com os métodos gerados automaticamente pelo `data`. Se você estiver usando outra variante do Spring Data, a maioria deles foi projetada para suportar tais construções, portanto, você deve usar classes como `data class User(val login: String, ...)` Quando estiver usando Spring Data MongoDB, Spring Data JDBC, etc.
 
 Observe: Enquanto Spring Data JPA possibilita o uso de IDs naturais (poderia ter sido a propriedade `login` em `User` class) via https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-persistence.saving-entites[`Persistable`], não é uma boa opção para o Kotlin devido a https://youtrack.jetbrains.com/issue/KT-6653[KT-6653], É por isso que é recomendável sempre usar entidades com IDs gerados em Kotlin.
 
@@ -900,7 +900,7 @@ class BlogApplication {
 }
 ----
 
-Para gerar https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#configuration-metadata-annotation-processor[seus próprios metadados] para que essas propriedades personalisadas sejam reconhecidas pela IDE, https://kotlinlang.org/docs/reference/kapt.html[kapt deve ser configuraro] com a dependência `spring-boot-configuration-processor` como a seguir.
+Para gerar https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#configuration-metadata-annotation-processor[seus próprios metadados] para que essas propriedades personalisadas sejam reconhecidas pela IDE, https://kotlinlang.org/docs/reference/kapt.html[kapt deve ser configurado] com a dependência `spring-boot-configuration-processor` como a seguir.
 
 `build.gradle.kts`
 [source,kotlin]
