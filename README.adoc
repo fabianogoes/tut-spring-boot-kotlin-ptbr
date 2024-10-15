@@ -65,7 +65,7 @@ Siga as etapas do assistente para usar os seguintes parâmetros::
 [[gradle-build]]
 == Entendendo o Gradle Build
 
-If you're using a Maven Build, you can <<maven-build, skip to the dedicated section>>.
+Se você está usando um Build Maven, você pode <<maven-build, pule para a seção dedicada>>.
 Se você estiver usando o Maven, poderá pular para a seção dedicada.
 
 === Plugins
