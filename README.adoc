@@ -199,7 +199,7 @@ Uma das principais características de Kotlin é https://kotlinlang.org/docs/nul
 Isso torna os aplicativos mais seguros por meio de declarações de `nullability` e expressões "value or no value" semântica sem pagar o custo de usar `Optional`. 
 Observe que Kotlin permite o uso de construções funcionais com valores anuláveis; veja https://www.baeldung.com/kotlin/null-safety[comprehensive guide to Kotlin null-safety].
 
-Embora o Java não permita `null-safety` em seu `type-system`, Spring Framework fornece `null-safety` em toda toda sua API Spring Framework por meio de anotações `tooling-friendly` declaradas no pacote `org.springframework.lang`. 
+Embora o `Java` não permita `null-safety` em seu `type-system`, **Spring Framework** fornece `null-safety` em toda toda sua API **Spring Framework** por meio de anotações `tooling-friendly` declaradas no pacote `org.springframework.lang`. 
 Por padrão, tipos de APIs Java usado em Kotlin são reconhecidos como https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types[platform types] onde `null-checks` são relaxados. https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support[Kotlin support for JSR 305 annotations] + anotação Spring nullability fornece `null-safety` por toda API Spring Framework para desenvolvedores Kotlin, com a vantagem de lidar com problemas relacionados com `null` em tempo de compilação.
 
 Este recurso pode ser habilitado adicionando a flag de compilação `-Xjsr305` com a opção `strict`.
